@@ -14,7 +14,7 @@ h1 {
 
 .card-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.25fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
     max-width: 1400px;
     max-height: 300px;
@@ -25,6 +25,10 @@ h1 {
 .sun-card {
     grid-row: 1 / 3;
     aspect-ratio: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .planet-card {
@@ -51,29 +55,32 @@ h1 {
 }
 
 .sun-circle {
-    width: 60%;
-    height: 30%;
+    width: 90%;
+    height: 45%;
     background: #fff;
     border-radius: 50%;
     margin-bottom: 1rem;
 }
 
-.card-title {
-    font-size: 1.25rem;
+.sun-card-title {
+    font-size: 3.5rem; /* Increased font size for sun title */
     color: #333333;
     margin: 0;
+    text-align: center;
 }
 
-.sun-card-title {
-    font-size: 3rem;
+.card-title {
+    font-size: 2rem; /* Increased font size for titles */
     color: #333333;
     margin: 0;
+    text-align: center;
 }
 
 .card-subtitle {
-    font-size: 0.875rem;
+    font-size: 1.5rem; /* Increased font size for subtitles */
     color: #333333;
-    margin: 0.5rem 0 0 0;
+    margin: 0.15rem 0 0 0; /* Reduced margin to bring it closer to the title */
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
