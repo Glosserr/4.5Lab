@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem;
     background: #1a1a1a;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -9,14 +9,15 @@ body {
 h1 {
     margin-bottom: 2rem;
     margin-left: 1rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .card-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
     max-width: 1400px;
+    max-height: 300px;
     margin: 0 1rem;
     padding-left: 0;
 }
@@ -59,12 +60,19 @@ h1 {
 
 .card-title {
     font-size: 1.25rem;
+    color: #333333;
+    margin: 0;
+}
+
+.sun-card-title {
+    font-size: 3rem;
+    color: #333333;
     margin: 0;
 }
 
 .card-subtitle {
     font-size: 0.875rem;
-    color: #888;
+    color: #333333;
     margin: 0.5rem 0 0 0;
 }
 
