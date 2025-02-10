@@ -53,14 +53,26 @@ title: Planetary Playing Cards
     </div>
 
     <script>
-        ScrollReveal().reveal('.card', {
-            delay: 200,
-            distance: '20px',
-            duration: 1000,
-            easing: 'cubic-bezier(0.5, 0, 0, 1)',
-            interval: 200,
-            opacity: 0,
-            origin: 'bottom',
-            reset: false
-        });
-    </script>
+    // Separate configuration for the sun card (appears first)
+    ScrollReveal().reveal('.sun-card', {
+        delay: 200,
+        distance: '50px',
+        duration: 1000,
+        easing: 'cubic-bezier(0.5, 0, 0, 1)',
+        opacity: 0,
+        origin: 'left',
+        reset: false
+    });
+
+    // Configuration for planet cards with sequential reveal
+    ScrollReveal().reveal('.planet-card', {
+        delay: 400,
+        distance: '50px',
+        duration: 1000,
+        easing: 'cubic-bezier(0.5, 0, 0, 1)',
+        interval: 100,
+        opacity: 0,
+        origin: 'right',
+        reset: false
+    });
+</script>
